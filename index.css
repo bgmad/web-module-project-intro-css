@@ -83,7 +83,6 @@ nav a {
     width: 12%;
     border-radius: 15%;
     padding: 0.9% 0.5% 0.1% 0.5%;
-
 }
 .plan {
     background: #FF764E;
@@ -94,6 +93,15 @@ nav a {
 .get {
     background: #FFCD69;
 }
+.plan:hover {
+    background: #0089B1;
+}
+.learn:hover {
+    background: #A12C14;
+}
+.get:hover {
+    background: #003296;
+}
 
 /* dealing with the header image and texts */
 /* 
@@ -101,11 +109,12 @@ nav a {
 
 
 FIX POSITIONING OF HEADER-TEXT
-INTEGRATE FONT SIZES
+INTEGRATED FONT SIZES
 
 
 
 */
+
 header img {
     display: inline-block;
     margin: 2% 8%;
@@ -117,7 +126,6 @@ header {
 }
 .header-text{
     display: inline-block;
-    /* margin-right: 9%; */
     position: relative;
     bottom: 22vh;
     left: 28vw; 
@@ -132,6 +140,17 @@ header {
 }
 .header-text .p2 {
     margin: 0% 15%;
+}
+@keyframes enlarge {
+    0% {width: 25%;}
+    100% {width: 27%;}
+}
+header img:hover{
+    animation-timing-function: ease;
+    animation-name: enlarge;
+    animation-delay: -0.1;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
 }
 
 /* section 1 text */
@@ -170,7 +189,7 @@ header {
     margin-top: 1%;
     margin-bottom: 5%;
 }
-.bold{
+.bold {
     font-weight: bold;
 }
 
