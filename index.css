@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* code starts here. above Eric Meyer's reset. */
+
+@font-face {
+    font-family: 'Chelsea Market', cursive;
+    font-family: 'Roboto Mono', monospace;
+    src: url(https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap);
+}
+html {
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto Mono';
+}
+
+/* Top navigation buttons */
+
+nav {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding: 2% 0%;
+}
+nav a {
+    font-size: 0.65rem;
+    text-decoration: none;
+    color: white;
+    background: red;
+    display: inline-block;
+    margin: 0% 5%;
+    height: 25px;
+    width: 12%;
+    border-radius: 15%;
+    padding: 0.9% 0.5% 0.1% 0.5%;
+}
+.plan {
+    background: #FF764E;
+}
+.learn {
+    background: #5ED3EB;
+}
+.get {
+    background: #FFCD69;
+}
+.plan:hover {
+    background: #0089B1;
+}
+.learn:hover {
+    background: #A12C14;
+}
+.get:hover {
+    background: #003296;
+}
+
+/* dealing with the header image and texts */
+/* 
+
+
+
+FIX POSITIONING OF HEADER-TEXT
+INTEGRATED FONT SIZES
+
+
+
+*/
+
+header img {
+    display: inline-block;
+    margin: 2% 8%;
+    width: 25%;
+    border-radius: 100%;
+}
+header {
+    margin-bottom: 0;
+}
+.header-text{
+    display: inline-block;
+    position: relative;
+    bottom: 22vh;
+    left: 28vw; 
+    text-align: center;
+}
+.header-text h1 {
+    font-family: 'Chelsea Market';
+    font-size: 2.1rem;
+}
+.header-text p {
+    font-size: 0.72rem;
+}
+.header-text .p2 {
+    margin: 0% 15%;
+}
+@keyframes enlarge {
+    0% {width: 25%;}
+    100% {width: 27%;}
+}
+header img:hover{
+    animation-timing-function: ease;
+    animation-name: enlarge;
+    animation-delay: -0.1;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+/* section 1 text */
+
+.sect1 {
+    font-size: 0.78rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    padding: 2% 2.5%;
+    text-align: center;
+    color: white;
+    background: #DDB9A3;
+}
+
+/* main section with images */
+
+.fire-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.van-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.main-section p {
+    font-size: 0.70rem;
+    text-align: center;
+    margin-left: 34%;
+    margin-right: 34%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* footer */
+
+footer img {
+    width: 100vw;
+    height: 21vh;
+    margin: 0% 0%;
+    object-position: 0% 20%;
+    object-fit: cover;
+}
+.footer-links {
+    margin: -0.2% 0%;
+    padding: 5% 0%;
+    background: #F9E7DC;
+}
+
